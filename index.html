@@ -1,14 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera página</title>
-    <link rel="icon" type="image/vnd.icon" href="images/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#4d2466"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Add keywords-->
+  <meta name="keywords" content="cv,AOC"/>
+  <!--Add author-->
+  <meta name="author" content="AOC" />
+  <!--Add tab icon-->
+  <link rel="icon" href="./components/icons/favicon.ico" type="image/x-icon">
+  <!--Modify tab name-->
+  <title>Resumen Cami 🧑🏽‍💻</title>
+  <!--Add description-->
+  <meta name="description" content="Hoja Resumen de Cami Olavaría, consultor@ de ciberseguridad y entusiasta en desarrollo web">
 </head>
 <body>
-    <h1>Hola Mundo!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos iste architecto omnis itaque eius nemo, repellendus quas neque. Ab, laborum? Quibusdam temporibus libero aliquam accusantium error deserunt voluptates delectus quidem!</p>
-
+  <header>
+    <img
+      id="profile-image"
+      width="200"
+      height="200"
+      title="Foto de perfil de Cami"
+      src="./assets/imgs/profile-color-rounded.png"
+      alt="Foto de perfil de Cami"
+      >
+      <!--Add title-->
+      <h1>Resumen - Cami Olavarría Casas</h1>
+      <!--Add contact information (dummy values)-->
+      <p><em>27 años  | Las XXX, Santiago de Chile | (+56)965142XXX | xxxxxx.xxxxxxxxx@pucv.cl</em></p>
+      <!--Navigation links-->
+      <nav>
+        <!--Anchors to internal links-->
+        <button class="button-item">
+          <a href="#about">🧑🏽‍💻 Sobre mi</a>
+        </button>
+        <button>
+          <a href="#experience">💻 Mi experiencia</a>
+        </button>
+        <button class="button-item">
+          <a href="#certifications">🎖️ Certificaciones</a>
+        </button>
+        <button class="button-item">
+          <a href="#education">🎓 Educación</a>
+        </button>
+        <!--Anchor to 1st party links-->
+        <button class="button-item">
+          <a href="./portafolio.html"">💼 Portafolio</a>
+        </button>
+        <!--Anchor to 3rd party link (Github repositorie)-->
+        <button class="button-item">
+          <a href="https://github.com/0xcami" target="_blank" rel="noreferrer">🐈‍⬛ Github</a> <!--noreferrer for security measures-->
+        </button>
+      </nav>
+  </header>
+  <hr>
+  <!--Principal content of body-->
+  <main>
+    <!--Add about-->
+    <section>
+      <article>
+        <header>
+          <h2 id="about">
+            Sobre mi
+          </h2>
+        </header>
+        <p>Soy Cami Olavarría, un@ apasionad@ de la tecnología con experiencia en el ámbito de la ciberseguridad. Actualmente, busco oportunidades para expandir mis horizontes y adentrarme en el mundo del desarrollo web.</p>
+        <p>Estoy segur@ de que mis habilidades en ciberseguridad, junto con mi pasión por el desarrollo web, me convierten en una candidat@ ideal para roles que combinen ambos campos.</p>
+      </article>
+    </section>
+    <!--Add experience as list-->
+    <section>
+      <article>
+        <h2 id="experience">Mi experiencia</h2>
+          <ol type="1" reversed>
+            <li class="listed-item">
+              <strong>EY - Consultor@ de Ciberseguridad</strong> | <em>Ago 2022 - Actualidad</em>
+            </li>
+            <li class="listed-item">
+              <strong>IDOM - Ingenier@ de Telecomunicaciones</strong> | <em>Feb 2022 - Jun 2022</em>
+            </li>
+            <li class="listed-item">
+              <strong>OZNET - Analista SOC</strong> | <em>Dic 2021 - Feb 2022</em>
+            </li>
+          </ol>
+      </article>
+    </section>
+    <!--Add projects-->
+    <section>
+      <article>
+        <header>
+          <h2 id="portafolio">
+            Proyectos
+          </h2>
+        </header>
+        <ul>
+          <li class="listed-item">
+            <a href="https://github.com/0xcami/cvHTML" title="" target="_blank">
+              <strong>Confección de Curriculum Vitae</strong> | <em>HTML</em>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <!--Add certifications-->
+    <section>
+      <article>
+        <header>
+          <h2 id="certifications">
+            Certificaciones
+          </h2>
+        </header>
+        <ul>
+          <li class="listed-item">
+            <a href="https://learn.microsoft.com/es-es/users/0xcami-9176/credentials/73b1c33676d79f1d" title="Certificación Microsoft 365 Certified: Fundamentals" target="_blank" rel="noreferrer">
+              <strong>Microsoft 365 Certified: Fundamentals</strong> | <em>Sep 2023</em> 
+            </a>
+          </li>
+          <li class="listed-item">
+            <a href="https://learn.microsoft.com/es-es/users/0xcami-9176/credentials/21ba8d8b4800558f" title="Certificación Microsoft Certified: Security, Compliance and Identity Fundamentals" target="_blank" rel="noreferrer">
+              <strong>Microsoft Certified: Security, Compliance and Identity Fundamentals</strong> | <em>Sep 2023</em>
+            </a>
+          </li>
+          <li class="listed-item">
+            <a href="https://learn.microsoft.com/es-es/users/0xcami-9176/credentials/1633feb97ffc7ede" title="Certificación Microsoft Certified: Azure Fundamentals | <em>Aug 2023</em>" target="_blank" rel="noreferrer">
+              <strong>Microsoft Certified: Azure Fundamentals</strong> | <em>Aug 2023</em>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <!--Add developer technologies-->
+    <aside>
+      <article>
+        <h2>
+          
+        </h2>
+      </article>
+    </aside>
+    <!--Add education-->
+    <section>
+      <article>
+        <header>
+          <h2 id="education">
+            Educación
+          </h2>
+        </header>
+        <ol type="1" reversed>
+          <li class="listed-item">
+            <strong>Desafio Latam</strong> - Bootcamp Desarrollo Web Full Stack | <em>2024 - Actualidad</em>
+          </li>
+          <li class="listed-item">
+            <strong>Pontificia Universidad Católica de Valparaíso</strong> - Diplomado en Ciberseguridad | <em>2023 - 2024</em>
+          </li>
+          <li class="listed-item">
+            <strong>Pontificia Universidad Católica de Valparaíso</strong> - Diplomado en Data Science & Machine Learning | <em>2022 - 2022</em>
+          </li>
+          <li class="listed-item">
+            <strong>Pontificia Universidad Católica de Valparaíso</strong> - Ingeniería Civil Electrónica | <em>2015 - 2021</em>
+          </li>
+        </ol>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <!--Add RRSS-->
+    <section>
+      <article>
+        <header>
+          <h3>
+            Redes sociales
+          </h3>
+        <a href="https://cl.linkedin.com/in/arturo-olavarria-c" rel="noreferrer" target="_blank">
+          <img id="profile-image"
+          width="25"
+          height="25"
+          title="Envíame un correo"
+          src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
+          alt="Envíame un correo"
+          >
+        </a>
+        </header>
+      </article>
+    </section>
+  </footer>
 </body>
 </html>
